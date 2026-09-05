@@ -1,0 +1,28 @@
+Technique: Phishing (MITRE ATT&CK T1566)
+
+Definition:
+Phishing is a social engineering technique where an attacker sends fraudulent messages designed to trick a person into revealing sensitive information (passwords, credit card numbers) or installing malware. Messages are often disguised as coming from a trusted source such as a bank, employer, or well-known service.
+
+Common indicators:
+- Urgent or threatening language ("your account will be suspended")
+- Mismatched or spoofed sender email domains
+- Suspicious links that do not match the displayed text
+- Requests for credentials, OTP codes, or payment information
+- Poor grammar or unusual formatting compared to legitimate communication
+- Unexpected attachments (invoices, shipping notices, "documents")
+
+Sub-techniques:
+- Spearphishing Attachment (T1566.001): malicious file attached to the email
+- Spearphishing Link (T1566.002): malicious link embedded in the email
+- Spearphishing via Service (T1566.003): uses third-party services like social media or SMS
+
+Why it is dangerous:
+Phishing is one of the most common initial access vectors used by attackers because it targets human trust rather than technical vulnerabilities. A single successful phishing email can lead to credential theft, malware installation, or a full network compromise.
+
+Recommended mitigation:
+- Verify sender address carefully before clicking links or replying
+- Do not enter credentials on pages reached via email links; navigate to the official site directly
+- Enable multi-factor authentication (MFA) on all important accounts
+- Report suspicious emails to the organization's security team
+- Use email filtering and anti-phishing tools
+- Conduct regular security awareness training for employees

@@ -1,0 +1,23 @@
+Technique: Data Encrypted for Impact / Ransomware (MITRE ATT&CK T1486)
+
+Definition:
+Ransomware is malicious software that encrypts files on a victim's system or network, rendering them inaccessible. The attacker then demands a ransom payment (often in cryptocurrency) in exchange for the decryption key. Many modern ransomware operations also steal data before encryption ("double extortion") and threaten to leak it publicly.
+
+Common indicators:
+- Sudden mass file renaming with unusual extensions (e.g., .locked, .encrypted)
+- Ransom note files appearing in multiple directories (e.g., "README_TO_DECRYPT.txt")
+- High CPU/disk activity from unknown processes
+- Disabled backups or deleted shadow copies (vssadmin delete shadows)
+- Unusual outbound network traffic (data exfiltration before encryption)
+
+Why it is dangerous:
+Ransomware can halt business operations completely, cause significant financial loss, and in critical sectors (healthcare, infrastructure) can even endanger lives. Paying the ransom does not guarantee data recovery and may fund further criminal activity.
+
+Recommended mitigation:
+- Maintain regular, offline/immutable backups tested for restoration
+- Patch systems promptly to close known vulnerabilities used for initial access
+- Segment networks to limit lateral movement
+- Deploy endpoint detection and response (EDR) tools
+- Disable unnecessary remote access services (e.g., exposed RDP)
+- Have an incident response plan ready before an attack occurs
+- Do not pay the ransom without consulting law enforcement and incident response professionals

@@ -1,0 +1,27 @@
+Technique: Brute Force (MITRE ATT&CK T1110)
+
+Definition:
+Brute force is a technique where an attacker systematically attempts many username and password combinations to gain unauthorized access to an account or system. This can be done through simple guessing, dictionary attacks (using common passwords), or credential stuffing (using previously leaked username/password pairs).
+
+Common indicators:
+- Large number of failed login attempts in a short time from the same or similar IP addresses
+- Login attempts using a list of common usernames (admin, root, test)
+- Account lockouts triggered repeatedly
+- Login attempts at unusual hours or from unexpected geographic locations
+- Successful login immediately following many failed attempts
+
+Sub-techniques:
+- Password Guessing (T1110.001)
+- Password Cracking (T1110.002): offline cracking of stolen password hashes
+- Password Spraying (T1110.003): trying one common password across many accounts to avoid lockouts
+- Credential Stuffing (T1110.004): using leaked credentials from other breaches
+
+Why it is dangerous:
+If successful, brute force attacks give attackers direct, legitimate-looking access to accounts, which can bypass many security controls that only detect malware-based attacks.
+
+Recommended mitigation:
+- Enforce account lockout policies after a defined number of failed attempts
+- Require strong, unique passwords and enable multi-factor authentication (MFA)
+- Implement CAPTCHA on login forms
+- Monitor and rate-limit login attempts at the network/application level
+- Use a Web Application Firewall (WAF) to detect and block automated login attempts

@@ -1,0 +1,21 @@
+Technique: Malicious Document / Macro Execution (MITRE ATT&CK T1204.002, T1059.005)
+
+Definition:
+Attackers often deliver malware through documents (Word, Excel, PDF) containing embedded macros or scripts. When a victim opens the document and enables macros/content, the embedded script executes, which can download further malware, establish persistence, or connect to a command-and-control (C2) server.
+
+Common indicators:
+- Documents received via email urging the recipient to "Enable Content" or "Enable Macros"
+- Unusual outbound network connections shortly after opening an Office document
+- Office applications (winword.exe, excel.exe) spawning unexpected child processes such as powershell.exe or cmd.exe
+- Documents from unknown or unverified senders, especially with generic filenames ("Invoice.docm", "Report.xlsm")
+- Obfuscated VBA macro code
+
+Why it is dangerous:
+This technique combines social engineering (tricking the user into enabling macros) with technical execution, making it a common and effective initial access method that can bypass some antivirus solutions if the macro is heavily obfuscated.
+
+Recommended mitigation:
+- Disable macros by default in organizational policy, allowing only digitally signed macros from trusted sources
+- Use application allow-listing to restrict which processes can be spawned by Office applications
+- Educate users never to enable macros/content from unsolicited documents
+- Use email attachment sandboxing/detonation before delivery
+- Monitor for Office applications spawning script interpreters (PowerShell, cmd, wscript)

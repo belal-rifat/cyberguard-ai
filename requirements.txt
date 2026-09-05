@@ -1,0 +1,11 @@
+langchain
+langchain-google-genai
+langchain-community
+faiss-cpu
+pytesseract
+pillow
+streamlit
+python-dotenv
+langsmith
+tavily-python
+fpdf2
