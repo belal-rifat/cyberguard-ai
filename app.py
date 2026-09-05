@@ -114,7 +114,7 @@ st.markdown(
 # Constants
 # ---------------------------------------------------------------------------
 CREATOR_NAME = "Rifat"
-GITHUB_LINK = "https://github.com/"  # তোমার actual repo link দিয়ে replace করো
+GITHUB_LINK = "https://github.com/belal-rifat/cyberguard-ai"
 
 SEVERITY_BADGE_CLASS = {
     "CRITICAL": "cg-badge-critical",

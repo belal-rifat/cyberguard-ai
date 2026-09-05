@@ -88,7 +88,7 @@ cyberguard-ai/
 ### Installation
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/belal-rifat/cyberguard-ai.git
 cd cyberguard-ai
 python -m venv venv
 source venv/Scripts/activate   # Windows Git Bash
