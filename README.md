@@ -158,6 +158,9 @@ environment variables. Traces show the full execution flow: the incoming
 query, which tools were called (and with what arguments), the retrieved
 context, and the final LLM response.
 
+**Example public trace(s):**
+- Text query (phishing example): https://smith.langchain.com/public/bf3a4ee4-f43b-436a-9125-00ee9b432fad/r/01a072e4-acf5-7591-a208-783b0e4ad8b7
+
 ## 9. Known Limitations / Future Improvements
 
 - Knowledge base currently covers 5 attack techniques; could be expanded
@@ -167,4 +170,20 @@ context, and the final LLM response.
 
 ## 10. Screenshots
 
-_Add screenshots of the app here before submission._
+**Home — Quick examples & text query**
+![Home tab](screenshots/01_home_quick_examples.png)
+
+**Screenshot upload & OCR extraction**
+![OCR upload](screenshots/02_ocr_image_upload.png)
+
+**Generated advisory report with severity badge**
+![Advisory report](screenshots/03_advisory_report.png)
+
+**PDF export of the report**
+![PDF export](screenshots/04_pdf_export.png)
+
+**Session history**
+![History tab](screenshots/05_history_tab.png)
+
+**About tab**
+![About tab](screenshots/06_about_tab.png)
