@@ -185,5 +185,10 @@ context, and the final LLM response.
 **Session history**
 ![History tab](screenshots/05_history_tab.png)
 
+**Tracing**
+![Tracing](screenshots/1.png)
+![Tracing](screenshots/2.png)
+![Tracing](screenshots/3.png)
+![Tracing](screenshots/4.png)
 **About tab**
 ![About tab](screenshots/06_about_tab.png)
