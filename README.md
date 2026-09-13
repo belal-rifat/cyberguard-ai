@@ -778,6 +778,11 @@ CyberGuard AI was developed as a cybersecurity-focused AI project exploring the 
 * SOC workflows
 * Agentic AI
 
+## 🎥 Demo Video
+
+[![CyberGuard AI Demo](https://img.youtube.com/vi/o0oQcSwjqq8/maxresdefault.jpg)](https://youtu.be/o0oQcSwjqq8)
+
+> Click the thumbnail to watch the full demo on YouTube.
 ### GitHub
 
 https://github.com/belal-rifat/cyberguard-ai
